@@ -1,0 +1,17 @@
+{
+  "name": "production-hub",
+  "private": true,
+  "type": "module",
+  "workspaces": ["packages/*", "apps/*"],
+  "scripts": {
+    "dev": "concurrently -k -n server,web -c blue,magenta \"npm:dev -w @hub/server\" \"npm:dev -w @hub/web\"",
+    "build": "npm run build -w @hub/web",
+    "start": "npm start -w @hub/server",
+    "test": "npm test -w @hub/core",
+    "typecheck": "tsc -p packages/core && tsc -p apps/server && tsc -p apps/web"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "typescript": "^5.6.3"
+  }
+}
