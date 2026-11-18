@@ -3,7 +3,15 @@
 One place to run a church's Sunday production: plan the service once, and every system
 (charts, lyrics, playback, lighting) reads from that same plan.
 
-## Run it
+## Run it (the easy way)
+
+1. Install **Node.js** (the "LTS" version) from https://nodejs.org. One time only.
+2. Open this folder and double-click:
+   - **Windows:** `Start Waypoint (Windows).bat`
+   - **Mac:** `Start Waypoint (Mac).command` (the first time, right-click it and choose **Open**)
+3. Your browser opens to Waypoint. Keep the black window open while you use it.
+
+## Run it (developers)
 
 ```bash
 npm install
